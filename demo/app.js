@@ -218,7 +218,7 @@ function badge(v) { const m = { dump: S.dumps.length, tasks: S.tasks.filter(t =>
 /* shell */
 function shell(body) {
  const [title, chip] = TITLES[UI.view]; const rem = todayTasks().filter(t => !t.done).length;
- return `${DEMO ? `<div class="banner">🌸 You're exploring the free demo with sample data — changes reset when you close the tab. <a href="${SHOP}" target="_blank" rel="noopener">Get the full planner →</a></div>` : ''}
+ return `${DEMO ? `<div class="banner">🌸 You're exploring the free demo with sample data — changes reset when you close the tab. <a href="https://www.etsy.com/listing/4609011775/adhd-life-planner-app-all-in-one-digital" target="_blank" rel="noopener">Get the full planner →</a></div>` : ''}
  <div class="app"><aside class="side" id="side">
   <div class="brand"><div class="logo">${ic('flower')}</div><div><b>World Trade Net</b><small>Bloom · Life Planner</small></div></div>
   <div class="focuscard"><div class="k">${ic('spark', '').replace('<svg', '<svg width="12" height="12"')} Daily focus <span class="chip" style="padding:1px 7px;font-size:9.5px">${rem} remaining</span></div><div class="v">${esc(S.settings.focus || 'Gentle focus for today.')}</div></div>
