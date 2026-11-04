@@ -215,7 +215,7 @@ function badge(v) { const m = { dump: S.dumps.length, tasks: S.tasks.filter(t =>
  if (v === 'mood') return S.moods[TODAY()] ? '<span class="cnt" style="background:var(--mintSoft);color:var(--mint)">Done</span>' : '<span class="cnt">Check-in</span>';
  return m[v] ? `<span class="cnt">${m[v]}</span>` : ''; }
 
-/* shell */
+
 function shell(body) {
  const [title, chip] = TITLES[UI.view]; const rem = todayTasks().filter(t => !t.done).length;
  return `${DEMO ? `<div class="banner">🌸 You're exploring the free demo with sample data — changes reset when you close the tab. <a href="https://www.etsy.com/listing/4609011775/adhd-life-planner-app-all-in-one-digital" target="_blank" rel="noopener">Get the full planner →</a></div>` : ''}
